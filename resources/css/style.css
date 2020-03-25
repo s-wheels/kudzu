@@ -1,0 +1,200 @@
+/* ---------------------------------------------- */
+/* --------------  BASIC SETUP  -------------- */
+/* ---------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: white;
+    color: #000000;
+    font-family: "Spartan", "Sen", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ---------------------------------------------- */
+/* --------------  REUSABLE SETUP  -------------- */
+/* ---------------------------------------------- */
+
+/*row is the only class defined in pixels = not responsive*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* --------------  HEADINGS  -------------- */
+h1 {
+    color: white;
+    font-size: 400%;
+    font-weight: 400;
+    letter-spacing:40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h1:hover,
+h1:active {
+    animation: tracking-in-expand-fwd;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 200%;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 4px;
+    background-color: rgb(47, 167, 47);
+    content: " ";
+    width: 200px;
+    margin: 30px auto 30px auto;
+}
+
+h3 {
+    font-size: 120%;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* --------------  PARAGRAPHS  -------------- */
+
+.long-copy {
+    line-height: 105%;
+    width: 60%;
+    margin: 5% 20%;
+}
+
+.box p{
+    font-size: 15px;
+    line-height: 155%;
+}
+
+/* --------------  ICONS  -------------- */
+
+.icon-big {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+/* --------------  ANIMATIONS  -------------- */
+
+
+
+
+
+/* --------------  BUTTONS  -------------- */
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    transition: background-color 0.2s,
+        border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #186218;
+    
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #28aa37;
+    border: 1px solid white;
+    margin-right: 25px
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #186218;
+    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid white;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #186218;
+    
+}
+
+.title-text-box {
+    width: 1140px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+/* ---------------------------------------------- */
+/* --------------  HEADER  -------------- */
+/* ---------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0,0,100,0.5), rgba(0,70,50,0.2)),
+        linear-gradient(rgba(0,0,100,0.5), rgba(0,60,50,0.4)), url(img/background_3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.main-list {
+    list-style: none; 
+}
+
+.main-nav {
+    margin-top: 60px;
+    margin-left: 16%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #2aaf2a;
+    transition: border-bottom 0.2s;
+    padding: 7px 0px
+}
