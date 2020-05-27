@@ -94,10 +94,14 @@ h3 {
 section:after {
     display: block;
     height: 4px;
-    background-color: rgb(47, 167, 47);
+    background-color: rgb(5, 20, 5);
     content: " ";
     width: 75%;
     margin: 40px auto 0px auto;
+}
+
+.section-form:after {
+    background-color: white;
 }
 
 /* --------------  PARAGRAPHS  -------------- */
@@ -106,6 +110,11 @@ section:after {
     line-height: 105%;
     width: 60%;
     margin: 5% 20%;
+    line-height: 155%;
+}
+
+.about-me{
+    line-height: 155%;
 }
 
 .box p{
@@ -129,7 +138,6 @@ section:after {
 
 .portfolio-icon{
     width: 60px;
-    background-color: 
 }
 
 .linkedin {
@@ -140,8 +148,7 @@ section:after {
     height: 80px;
     width: auto;
     float: none;
-    top: 10px;
-    margin-top: 10px;
+    margin: 25px 0px 0px 20%;
 }
 
 
@@ -169,19 +176,18 @@ section:after {
 /* --------------  ABOUT ME  -------------- */
 
 .section-about-me{
-    margin: 0% 20% 0% 20%;
-    padding: 0% 1% 0 1%;
+    padding: 0% 5% 0 5%;
 }
 
 .about-me-box{
-    width: 100%;
+    width: 90%;
     display: block;
     float: none;
 }
 
 .about-me-img{
     width: 10%;
-    margin: 0 10% 0 10%
+    margin: 0 10% 10% 10%
 }
 
 .profile-links{
@@ -189,11 +195,34 @@ section:after {
     margin: 20px 10% auto 26%;
 }
 
+/* --------------  CONTACT  -------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {outline: none;}
 
 /* --------------  BUTTONS  -------------- */
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]
+{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -205,26 +234,33 @@ section:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+{
     background-color: #186218;
     
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]
+{
     background-color: #28aa37;
     border: 1px solid white;
     margin-right: 25px
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
     background-color: #186218;
     
 }
 
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited
+{
     border: 1px solid white;
 }
 
@@ -235,8 +271,7 @@ section:after {
 }
 
 .title-text-box {
-    position: relative;
-    margin: 300px auto auto auto;
+    margin: 35vh 0% 0% auto;
     text-align: center;
 }
 
@@ -246,11 +281,13 @@ section:after {
 
 header {
     background-image: linear-gradient(rgba(0,0,100,0.5), rgba(0,70,50,0.2)),
-        linear-gradient(rgba(0,0,100,0.5), rgba(0,60,50,0.4)), url(img/background_3.jpg);
-    background-size: cover;
+        linear-gradient(rgba(0,0,100,0.5), rgba(0,60,50,0.4)), url(img/kudzu-large-background.png);
+    background-size:auto;
     background-position: center;
     height: 100vh;
+    margin: auto;
     background-attachment: fixed;
+    background-repeat:no-repeat;
 }
 
 .main-list {
@@ -259,12 +296,11 @@ header {
 
 .main-nav {
     margin-top: 60px;
-    margin-left: 14%;
 }
 
 .main-nav li {
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 10%;
 }
 
 .main-nav li a:link,
@@ -280,4 +316,62 @@ header {
     border-bottom: 2px solid #2aaf2a;
     transition: border-bottom 0.2s;
     padding: 7px 0px
+}
+
+/* ---------------------------------------------- */
+/* --------------  FOOTER  -------------- */
+/* ---------------------------------------------- */
+
+footer {
+    background-color: rgb(5, 20, 5);
+    height: 250px; 
+}
+
+.footer-nav {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-nav ul{
+    display: inline-block;
+    padding: 0 6%;
+}
+
+.footer-nav ul a:link,
+.footer-nav ul a:visited {
+    color: #6d6d6d;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-nav ul a:hover,
+.footer-nav ul a:active {
+    border-bottom: 2px solid #2aaf2a;
+    transition: border-bottom 0.2s;
+    padding: 7px 0px;
+    color: white;
+}
+
+.footer-links {
+    display: inline-block;
+    width: 98%;
+    height: 150px;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-icon{
+    width: 40px;
+    margin: 10px;
 }

@@ -1,0 +1,16 @@
+/* For monitors 1200px+*/
+@media only screen and (max-width 1200px) {
+    
+}
+
+/* For large phones/tablets 481-767px*/
+@media only screen and (max-width 845px) {
+    
+}
+
+
+/* For small phones 0-480px*/
+@media only screen and (max-width 480px) {
+    
+}
+
