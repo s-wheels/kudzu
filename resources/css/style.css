@@ -25,7 +25,6 @@ html {
     height: 0;
     visibility:hidden;
 }
-
 /* ---------------------------------------------- */
 /* --------------  REUSABLE SETUP  -------------- */
 /* ---------------------------------------------- */
@@ -168,6 +167,14 @@ section:after {
     animation-fill-mode: forwards;
     animation-direction: alternate;
     background-color: #348d3e;
+}
+
+.section-spaces .row {
+    margin: 20px auto 20px auto;
+}
+
+.section-spaces .col {
+    margin: auto;
 }
 
 .spaces-icon{
