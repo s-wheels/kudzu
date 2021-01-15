@@ -105,6 +105,9 @@ FL(p_t) = - \alpha_t( 1- p_t)^\gamma  \log(p_t)
 
 \ref
 
+### Softmax vs Sigmoid
+
+https://stats.stackexchange.com/questions/233658/softmax-vs-sigmoid-function-in-logistic-classifier
 
 
 ### Further Reading
