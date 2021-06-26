@@ -17,112 +17,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.clearfix {zoom: 1}
-.clearfix:after {
-    content: ".";
-    clear:both;
-    display: block;
-    height: 0;
-    visibility:hidden;
-}
+
 /* ---------------------------------------------- */
 /* --------------  REUSABLE SETUP  -------------- */
 /* ---------------------------------------------- */
-
-/*row is the only class defined in pixels = not responsive*/
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-section {
-    padding: 30px 0;
-}
-
-.box {
-    padding: 1%;
-}
-
-/* --------------  HEADINGS  -------------- */
-h1 {
-    color: white;
-    font-size: 400%;
-    font-weight: 400;
-    letter-spacing: 2vw;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    animation: tracking-in-expand-fwd 2.5s ease none;
-}
-
-h1:hover,
-h1:active {
-    animation: tracking-in-expand-fwd;
-}
-
-h2, h3 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 200%;
-    letter-spacing: 2px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h2:after {
-    display: block;
-    height: 4px;
-    background-color: rgb(47, 167, 47);
-    content: " ";
-    width: 200px;
-    margin: 30px auto 30px auto;
-}
-
-h3 {
-    text-align: center;
-    font-size: 120%;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-/* --------------  SECTIONS  -------------- */
-
-section:after {
-    display: block;
-    height: 4px;
-    background-color: rgb(5, 20, 5);
-    content: " ";
-    width: 75%;
-    margin: 40px auto 0px auto;
-}
-
-.section-form:after {
-    background-color: white;
-}
-
-/* --------------  PARAGRAPHS  -------------- */
-
-.long-copy{
-    line-height: 105%;
-    width: 60%;
-    margin: 5% 20%;
-    line-height: 155%;
-}
-
-.about-me{
-    line-height: 155%;
-}
-
-.box p{
-    font-size: 15px;
-    line-height: 155%;
-    margin: 0 5%;
-}
-
-
 /* --------------  ICONS/IMAGES  -------------- */
 
 .icon-big {
@@ -154,10 +52,14 @@ section:after {
 
 /* --------------  SPACES  -------------- */
 
+.spaces-row{
+    padding: 50%;
+}
+
 .spaces-circle{
     display: inline-block;
     background-color: #28aa37;
-    padding: 21% 23%;
+    padding: 21% 21%;
     border-radius: 100%;
     transition: all 0.5s ease;
 }
@@ -170,216 +72,8 @@ section:after {
     background-color: #348d3e;
 }
 
-.section-spaces .row {
-    margin: 20px auto 20px auto;
-}
-
-.section-spaces .col {
-    margin: auto;
-}
 
 .spaces-icon{
     width: 65px;
 }
-/* --------------  ABOUT ME  -------------- */
 
-.section-about-me{
-    padding: 0% 5% 0 5%;
-}
-
-.about-me-box{
-    width: 90%;
-    display: block;
-    float: none;
-}
-
-.about-me-img{
-    width: 10%;
-    margin: 0 10% 10% 10%
-}
-
-.profile-links{
-    width:60%;
-    margin: 20px 10% auto 26%;
-}
-
-/* --------------  CONTACT  -------------- */
-
-.contact-form {
-    width: 60%;
-    margin: 0 auto;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-    width: 100%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #cccccc;
-}
-
-textarea {
-    height: 100px;
-}
-
-*:focus {outline: none;}
-
-/* --------------  BUTTONS  -------------- */
-
-.btn:link,
-.btn:visited,
-input[type=submit]
-{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    color: white;
-    transition: background-color 0.2s,
-        border 0.2s, color 0.2s;
-}
-
-.btn:hover,
-.btn:active,
-{
-    background-color: #186218;
-    
-}
-
-.btn-full:link,
-.btn-full:visited,
-input[type=submit]
-{
-    background-color: #28aa37;
-    border: 1px solid white;
-    margin-right: 25px
-}
-
-.btn-full:hover,
-.btn-full:active,
-input[type=submit]:hover,
-input[type=submit]:active
-{
-    background-color: #186218;
-    
-}
-
-.btn-ghost:link,
-.btn-ghost:visited
-{
-    border: 1px solid white;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    background-color: #186218;
-    
-}
-
-.title-text-box {
-    margin: 35vh 0% 0% auto;
-    text-align: center;
-}
-
-/* ---------------------------------------------- */
-/* --------------  HEADER  -------------- */
-/* ---------------------------------------------- */
-
-header {
-    background-image: linear-gradient(rgba(0,0,100,0.5), rgba(0,70,50,0.2)),
-        linear-gradient(rgba(0,0,100,0.5), rgba(0,60,50,0.4)), url(img/kudzu-large-background.png);
-    background-size:auto;
-    background-position: center;
-    height: 100vh;
-    margin: auto;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
-}
-
-.main-list {
-    list-style: none; 
-}
-
-.main-nav {
-    margin-top: 60px;
-}
-
-.main-nav li {
-    display: inline-block;
-    margin-left: 10%;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom: 2px solid transparent;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 2px solid #2aaf2a;
-    transition: border-bottom 0.2s;
-    padding: 7px 0px
-}
-
-/* ---------------------------------------------- */
-/* --------------  FOOTER  -------------- */
-/* ---------------------------------------------- */
-
-footer {
-    background-color: rgb(5, 20, 5);
-    height: 250px; 
-}
-
-.footer-nav {
-    list-style: none;
-    display: inline-block;
-    width: 100%;
-    height: 100px;
-    padding: 40px;
-    text-align: center;
-}
-
-.footer-nav ul{
-    display: inline-block;
-    padding: 0 6%;
-}
-
-.footer-nav ul a:link,
-.footer-nav ul a:visited {
-    color: #6d6d6d;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom: 2px solid transparent;
-}
-
-.footer-nav ul a:hover,
-.footer-nav ul a:active {
-    border-bottom: 2px solid #2aaf2a;
-    transition: border-bottom 0.2s;
-    padding: 7px 0px;
-    color: white;
-}
-
-.footer-links {
-    display: inline-block;
-    width: 98%;
-    height: 150px;
-    padding: 40px;
-    text-align: center;
-}
-
-.footer-links a:link,
-.footer-links a:visited {
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-}
-
-.footer-icon{
-    width: 40px;
-    margin: 10px;
-}
