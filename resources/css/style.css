@@ -21,6 +21,79 @@ html {
 /* ---------------------------------------------- */
 /* --------------  REUSABLE SETUP  -------------- */
 /* ---------------------------------------------- */
+
+/* --------------  TEXT  -------------- */
+
+.long-copy{
+    line-height: 105%;
+    width: 60%;
+    margin: 5% 10%;
+    line-height: 155%;
+}
+/* --------------  HEADINGS  -------------- */
+h1 {
+    color: white;
+    font-size: 400%;
+    font-weight: 400;
+    letter-spacing: 2vw;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    animation: tracking-in-expand-fwd 2.5s ease none;
+}
+
+h1:hover,
+h1:active {
+    animation: tracking-in-expand-fwd;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 200%;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 4px;
+    background-color: rgb(47, 167, 47);
+    content: " ";
+    width: 200px;
+    margin: 30px auto 30px auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 120%;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* --------------  SECTIONS  -------------- */
+
+section {
+    padding: 30px 0;
+}
+
+section:after {
+    display: block;
+    height: 4px;
+    background-color: rgb(5, 20, 5);
+    content: " ";
+    width: 75%;
+    margin: 40px auto 0px auto;
+}
+
+.section-form:after {
+    background-color: white;
+}
+
+
 /* --------------  ICONS/IMAGES  -------------- */
 
 .icon-big {
@@ -47,13 +120,34 @@ html {
     width: auto;
     float: none;
     margin: 25px 0px 0px 20%;
+    
+    
+    
+    
+}
+/* --------------  MISSION  -------------- */
+
+.mission-block{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
+.mission-block p{
+    font-size: 15px;
+    line-height: 155%;
+    margin: 0 5%;
+}
 
+.mission-block p{
+    font-size: 15px;
+    line-height: 155%;
+    margin: 0 5%;
+}
 /* --------------  SPACES  -------------- */
 
-.spaces-row{
-    padding: 50%;
+.spaces-block{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .spaces-circle{
