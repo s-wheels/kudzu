@@ -17,6 +17,14 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+body {
+    background-color: rgba(0, 255, 10, 0.02);
+    color: #1a361e;
+    font-family: "Spartan", "Sen", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
 
 /* ---------------------------------------------- */
 /* --------------  REUSABLE SETUP  -------------- */
@@ -24,11 +32,17 @@ html {
 
 /* --------------  TEXT  -------------- */
 
-.long-copy{
-    line-height: 105%;
-    width: 60%;
-    margin: 5% 10%;
+.section-statement{
+    text-align: center;
     line-height: 155%;
+    margin-bottom: 30px;
+}
+
+.p{
+    color: #1a361e;
+    font-family: "Spartan", "Sen", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 /* --------------  HEADINGS  -------------- */
 h1 {
@@ -64,14 +78,56 @@ h2:after {
     background-color: rgb(47, 167, 47);
     content: " ";
     width: 200px;
-    margin: 30px auto 30px auto;
+    margin: 20px auto 20px auto;
 }
 
 h3 {
     text-align: center;
     font-size: 120%;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin: 15px 0px;
+}
+
+/* --------------  HEADER  -------------- */
+
+header {
+    background-image: linear-gradient(rgba(0,0,100,0.5), rgba(0,70,50,0.2)),
+        linear-gradient(rgba(0,0,100,0.5), rgba(0,60,50,0.4)), url(img/kudzu-large-background.png);
+    background-size:auto;
+    background-position: center;
+    height: 100vh;
+    margin: auto;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+.navbar-brand {
+    margin-left: 10%;
+}
+
+.navbar-nav {
+    margin: 0% 15%;
+}
+
+.nav-item > a:link,
+.nav-item > a:visited {
+    padding-top: 30px;
+    margin-right: 50px; 
+    color: white !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item > a:hover,
+.nav-item > a:active {
+    border-bottom: 2px solid #2aaf2a;
+    transition: border-bottom 0.2s;
+}
+
+.title-text-box {
+    margin: 35vh 0% 0% auto;
+    text-align: center;
 }
 
 /* --------------  SECTIONS  -------------- */
@@ -96,10 +152,8 @@ section:after {
 
 /* --------------  ICONS/IMAGES  -------------- */
 
-.icon-big {
-    display: block;
+.mission-icon {
     margin-bottom: 10px;
-    margin-left: 38%;
 }
 
 .img-profile{
@@ -119,10 +173,7 @@ section:after {
     height: 80px;
     width: auto;
     float: none;
-    margin: 25px 0px 0px 20%;
-    
-    
-    
+    margin: 25px 0px 0px 20%;   
     
 }
 /* --------------  MISSION  -------------- */
@@ -138,11 +189,6 @@ section:after {
     margin: 0 5%;
 }
 
-.mission-block p{
-    font-size: 15px;
-    line-height: 155%;
-    margin: 0 5%;
-}
 /* --------------  SPACES  -------------- */
 
 .spaces-block{
@@ -171,3 +217,60 @@ section:after {
     width: 65px;
 }
 
+/* --------------  CAROUSEL  -------------- */
+
+.carousel-window{
+}
+
+
+
+.carousel-inner > .carousel-item > img {
+  max-height:80vh;
+  max-width: 80%;
+  margin: auto;
+}
+
+.section-carousel{
+}
+
+/* --------------  ABOUT ME  -------------- */
+
+.profile-div{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --------------  FOOTER  -------------- */
+
+
+footer {
+    background-color: rgb(5, 20, 5);
+    min-height: 250px; 
+    height: auto;
+}
+
+
+.footer-nav {
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-nav ul a:link,
+.footer-nav ul a:visited {
+    color: #6d6d6d;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-nav ul a:hover,
+.footer-nav ul a:active {
+    border-bottom: 2px solid #2aaf2a;
+    transition: border-bottom 0.2s;
+    padding: 7px 0px;
+    color: white;
+}
+
+.footer-icon{
+    width: 40px;
+}
