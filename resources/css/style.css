@@ -44,6 +44,8 @@ body {
     font-weight: 400;
     font-size: 20px;
 }
+
+
 /* --------------  HEADINGS  -------------- */
 h1 {
     color: white;
@@ -109,8 +111,8 @@ header {
     margin: 0% 15%;
 }
 
-.nav-item > a:link,
-.nav-item > a:visited {
+.kudzu-link:link,
+.kudzu-link:visited {
     padding-top: 30px;
     margin-right: 50px; 
     color: white !important;
@@ -119,8 +121,8 @@ header {
     border-bottom: 2px solid transparent;
 }
 
-.nav-item > a:hover,
-.nav-item > a:active {
+.kudzu-link:hover,
+.kudzu-link:active {
     border-bottom: 2px solid #2aaf2a;
     transition: border-bottom 0.2s;
 }
