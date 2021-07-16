@@ -94,7 +94,7 @@ h3 {
 
 header {
     background-image: linear-gradient(rgba(0,0,100,0.5), rgba(0,70,50,0.2)),
-        linear-gradient(rgba(0,0,100,0.5), rgba(0,60,50,0.4)), url(img/kudzu-large-background.png);
+        linear-gradient(rgba(0,0,100,0.5), rgba(0,60,50,0.4)), url(../img/homepage/kudzu-large-background.png);
     background-size:auto;
     background-position: center;
     height: 100vh;
@@ -113,7 +113,7 @@ header {
 
 .kudzu-link:link,
 .kudzu-link:visited {
-    padding-top: 30px;
+    padding-top: 40px;
     margin-right: 50px; 
     color: white !important;
     text-decoration: none;
